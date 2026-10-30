@@ -1,0 +1,16 @@
+:root{
+    --main: #3c3d88bb;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+
+body {
+    background:var(--main)
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: black;
+}
