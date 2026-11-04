@@ -1,0 +1,89 @@
+:root{
+    --main: rgb(166, 160, 147);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+
+body {
+    background:var(--main);
+    font-family: "Outfit", "Segoe UI", Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -2;
+  background:
+    radial-gradient(38% 38% at 18% 22%, rgb(95, 91, 80), transparent 70%),
+    radial-gradient(34% 34% at 82% 28%, rgb(22, 0, 0), transparent 70%),
+    radial-gradient(40% 40% at 62% 88%, rgba(255, 79, 163, 0.34), transparent 70%);
+  filter: blur(40px);
+  animation: drift 24s ease-in-out infinite alternate;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: black;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 0 18px;
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-bottom: -30px;
+  transition: grid-template-rows 0.5s ease, margin-bottom 0.5s ease;
+}
+.header-clip { min-height: 0; overflow: hidden; }
+.header-inner { padding: calc(14px + env(safe-area-inset-top, 0px)) 0 30px 0; transition: transform 0.5s ease, opacity 0.4s ease; }
+
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(1.5px 1.5px at 8% 14%, #fff, transparent),
+    radial-gradient(1px 1px at 23% 68%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 37% 32%, #fff, transparent),
+    radial-gradient(1px 1px at 52% 82%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 66% 18%, #fff, transparent),
+    radial-gradient(1px 1px at 78% 58%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 91% 38%, #fff, transparent),
+    radial-gradient(1px 1px at 14% 90%, #fff, transparent),
+    radial-gradient(1px 1px at 59% 47%, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 96% 88%, #fff, transparent);
+  animation: twinkle 5s ease-in-out infinite alternate;
+}
+
+a:link { color: rgb(128, 0, 64); }
+a:visited { color: rgba(165, 51, 131, 0.767); }
+a:hover { color:purple; }
+a:active { color: red; } 
+
+@keyframes slide { to { transform: translateX(-50%); } }
+
+.marquee { overflow: hidden; border-top: 1px ; border-bottom: 1px ; padding: 20px 0; }
+.track { display: flex; width: max-content; animation: slide 34s linear infinite; }
+.marquee span { font-family: "Syne", sans-serif; font-weight: 800; font-size: 2.2rem; padding: 0 28px; }
+
+.button{
+    
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #210a74;
+  color: rgb(58, 190, 151);
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.button:hover {
+  color : whitesmoke;
+}
