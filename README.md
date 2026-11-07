@@ -5,6 +5,16 @@ A music-lyric web page made by me and my friend.
 # Overview
 This lyrics platform allows users to explore a library of songs, read lyrics, learn about artists, and curate their favorite content in a personal collection. The UI is designed to be minimal yet functional, with a strong focus on usability and speed.
 
+# Difficulties
+Had much of difficulties in making the background different and cool!
+Another difficulty was the moving of the album names in the index page 
+Lastly the most frustrating part was to connect all these files together .. it was such a hassle but was fixed after some overnight works!
+
+# Features
+- Easy to navigate throughout the website
+- Attractive and cool ambience
+- Background colors specially chosen to calm the eyes while reading lyrics!
+
 # ScreenShots
 
 **HomePage**
@@ -28,6 +38,8 @@ Sample of Song's lyrics page
 HTML5
 
 CSS
+
+A cup of coffee
 
 that's all we needed.
 
