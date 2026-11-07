@@ -1,6 +1,8 @@
 # lyreegroove
 A music-lyric web page made by me and my friend.
 
+https://ishudutta487-png.github.io/lyreegroove/
+
 
 # Overview
 This lyrics platform allows users to explore a library of songs, read lyrics, learn about artists, and curate their favorite content in a personal collection. The UI is designed to be minimal yet functional, with a strong focus on usability and speed.
